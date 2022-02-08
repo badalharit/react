@@ -6,9 +6,9 @@ function App() {
     /*
     * Example of Imperative style of code (JS)
     */
-    const paragraph = document.createElement("p");
-    paragraph.textContent = "Hello, I'm an example of Imperative style of code (JS).!";
-    document.getElementById('root').append(paragraph);
+    // const paragraph = document.createElement("p");
+    // paragraph.textContent = "Hello, I'm an example of Imperative style of code (JS).!";
+    // document.getElementById('root').append(paragraph);
 
     /*
     * Example of Declarative style of code (React JS)
