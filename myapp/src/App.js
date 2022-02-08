@@ -1,4 +1,5 @@
 import './App.css';
+import MyCustomComponent from './MyCustomComponent';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <div>
         <h3>Hello World</h3>
         <p>Hello, I'm an example of Declarative style of code (React JS).!</p>
+        <MyCustomComponent></MyCustomComponent>
       </div>
     );
 }
