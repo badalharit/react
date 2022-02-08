@@ -1,6 +1,6 @@
 import "./MyCustomComponent.css";
 
-function MyCustomComponent(){
+function MyCustomComponent(props){
 
     /*---------------------------------------------------------------------------------------------
      * Dynamic Data & Function Calings
@@ -16,12 +16,12 @@ function MyCustomComponent(){
 
     return(
     <div className="task-item">    
-        <div> {todaysDate.toISOString()} </div>
+        <div> {props.todaysDate.toISOString()} </div>
         <div className="task-item__description">
             <h2>
-                {getCourseName()}
+                {props.courseTitle}
             </h2>
-            <div className="task-item__priority">{priority}</div>
+            <div className="task-item__priority">{props.priority}</div>
         </div>
     </div>
     );
