@@ -1,4 +1,4 @@
-import "./MyCustomComponent.css";
+import "./TaskItem.css";
 
 function MyCustomComponent(props){
 

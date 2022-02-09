@@ -1,5 +1,5 @@
 import './App.css';
-import MyCustomComponent from './MyCustomComponent';
+import MyCustomComponent from './TaskItem';
 
 function App() {
 
