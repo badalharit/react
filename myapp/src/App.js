@@ -14,30 +14,30 @@ function App() {
     * Example of Declarative style of code (React JS)
     */
 
-    const myDataObject = {
-      object1:{
+    const items = [
+      {
         todaysDate : new Date(),
         courseTitle: 'Solidity & Etherium',
         priority: 1
       },
-      object2:{
+      {
         todaysDate : new Date(),
         courseTitle: 'Smart Contracts & Etherium',
         priority: 2
       },
-    };
+    ];
 
     return (
       <div>
         <h3>Hello World</h3>
         <p>Hello, I'm an example of Declarative style of code (React JS).!</p>
-        <MyCustomComponent todaysDate={myDataObject.object1.todaysDate}
-                           courseTitle={myDataObject.object1.courseTitle} 
-                           priority={myDataObject.object1.priority}>
+        <MyCustomComponent todaysDate={items[0].todaysDate}
+                           courseTitle={items[0].courseTitle} 
+                           priority={items[0].priority}>
         </MyCustomComponent>
-        <MyCustomComponent todaysDate={myDataObject.object2.todaysDate}
-                           courseTitle={myDataObject.object2.courseTitle} 
-                           priority={myDataObject.object2.priority}>
+        <MyCustomComponent todaysDate={items[1].todaysDate}
+                           courseTitle={items[1].courseTitle} 
+                           priority={items[1].priority}>
         </MyCustomComponent>
       </div>
     );
