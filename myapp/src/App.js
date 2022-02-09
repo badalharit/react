@@ -14,19 +14,26 @@ function App() {
         courseTitle: 'Smart Contracts & Etherium',
         priority: 2
       },
+      {
+        dateValue : new Date(),
+        courseTitle: 'Ganache & Truffle',
+        priority: 3
+      }
     ];
 
     return (
       <div>
         <h1>To-Do List</h1>
-        <MyCustomComponent dateValue={items[0].dateValue}
-                           courseTitle={items[0].courseTitle} 
-                           priority={items[0].priority}>
-        </MyCustomComponent>
-        <MyCustomComponent dateValue={items[1].dateValue}
-                           courseTitle={items[1].courseTitle} 
-                           priority={items[1].priority}>
-        </MyCustomComponent>
+        {
+          items.map(
+            (item) => {
+              return <MyCustomComponent dateValue={item.dateValue}
+                           courseTitle={item.courseTitle} 
+                           priority={item.priority}>
+                      </MyCustomComponent>
+            }
+          )
+        }
       </div>
     );
 }
