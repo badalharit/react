@@ -27,10 +27,10 @@ function App() {
         {
           items.map(
             (item) => {
-              return <MyCustomComponent dateValue={item.dateValue}
+              return (<MyCustomComponent dateValue={item.dateValue}
                            courseTitle={item.courseTitle} 
                            priority={item.priority}>
-                      </MyCustomComponent>
+                      </MyCustomComponent>)
             }
           )
         }
